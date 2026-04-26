@@ -242,6 +242,7 @@ def predict_from_dicom(
                 affine=mr_affine,
                 ReconstructionMethod=f"CNN MAP Bowsher {model_name} {pyapetnet.__version__}",
                 SeriesDescription=series_description,
+                PhotometricInterpretation="MONOCHROME2",
                 SeriesNumber=series_num,
                 **dcm_kwargs,
             )
@@ -253,6 +254,7 @@ def predict_from_dicom(
                 ReconstructionMethod=f"CNN MAP Bowsher {model_name} {pyapetnet.__version__}",
                 SeriesDescription=series_description,
                 SeriesNumber=series_num,
+                PhotometricInterpretation="MONOCHROME2",
                 **dcm_kwargs,
             )
 
